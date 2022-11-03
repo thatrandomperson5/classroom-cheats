@@ -1,5 +1,5 @@
 (async function () {
-  const pin = prompt("Enter PIN, like: 123-456", "").match(/[0-9]/g).join("");
+  const pin = prompt("Enter PIN, like: 123-456", "").match(/[0-9A-Z]/g).join("");
   if (pin.length !== 6) {
     alert("Invalid Pin, try again");
     return;
